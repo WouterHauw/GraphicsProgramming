@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{01B5BD20-C969-4604-B5F6-E3C0BF4E0FF2}</ProjectGuid>
+    <ProjectGuid>{F1D93F50-CC66-41C3-8E38-718D9FDE1FC6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Primitives_Basic</RootNamespace>
+    <RootNamespace>Primitives_Intermediate</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -82,10 +82,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Common\Camera.cpp" />
+    <ClCompile Include="..\..\Common\d3dApp.cpp" />
+    <ClCompile Include="..\..\Common\d3dUtil.cpp" />
+    <ClCompile Include="..\..\Common\GameTimer.cpp" />
+    <ClCompile Include="..\..\Common\GeometryGenerator.cpp" />
+    <ClCompile Include="..\..\Common\LightHelper.cpp" />
+    <ClCompile Include="..\..\Common\MathHelper.cpp" />
+    <ClCompile Include="..\..\Common\TextureMgr.cpp" />
+    <ClCompile Include="..\..\Common\Waves.cpp" />
+    <ClCompile Include="..\..\Common\xnacollision.cpp" />
     <ClCompile Include="Primitives.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FX\color.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\Camera.h" />
+    <ClInclude Include="..\..\Common\d3dApp.h" />
+    <ClInclude Include="..\..\Common\d3dUtil.h" />
+    <ClInclude Include="..\..\Common\d3dx11effect.h" />
+    <ClInclude Include="..\..\Common\GameTimer.h" />
+    <ClInclude Include="..\..\Common\GeometryGenerator.h" />
+    <ClInclude Include="..\..\Common\LightHelper.h" />
+    <ClInclude Include="..\..\Common\MathHelper.h" />
+    <ClInclude Include="..\..\Common\TextureMgr.h" />
+    <ClInclude Include="..\..\Common\Waves.h" />
+    <ClInclude Include="..\..\Common\xnacollision.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
