@@ -14,14 +14,14 @@ public:
 	PrimitiveApp(HINSTANCE hInstance);
 	~PrimitiveApp();
 
-	bool Init();
-	void OnResize();
-	void UpdateScene(float dt);
-	void DrawScene();
+	bool Init() override;
+	void OnResize() override;
+	void UpdateScene(float dt) override;
+	void DrawScene() override;
 
-	void OnMouseDown(WPARAM btnState, int x, int y);
-	void OnMouseUp(WPARAM btnState, int x, int y);
-	void OnMouseMove(WPARAM btnState, int x, int y);
+	void OnMouseDown(WPARAM btnState, int x, int y) override;
+	void OnMouseUp(WPARAM btnState, int x, int y) override;
+	void OnMouseMove(WPARAM btnState, int x, int y) override;
 
 private:
 	void BuildGeometryBuffers();
