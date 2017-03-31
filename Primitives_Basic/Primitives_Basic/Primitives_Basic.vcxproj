@@ -92,7 +92,7 @@
     <ClCompile Include="..\..\Common\TextureMgr.cpp" />
     <ClCompile Include="..\..\Common\Waves.cpp" />
     <ClCompile Include="..\..\Common\xnacollision.cpp" />
-    <ClCompile Include="BoxDemo.cpp" />
+    <ClCompile Include="Primitives.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FX\color.fx" />
